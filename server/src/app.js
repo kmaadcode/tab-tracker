@@ -11,11 +11,11 @@ app.use(bodyParser.json());
 app.use(cors());
 const PORT = process.env.PORT || 8081;
 
-
-app.get('/status', (req, res) => {
-    res.send({message:'Server running find !!!'})
-} )
-
+app.post('/register', (req, res) => {
+  res.send({
+    message: `Hello ${req.body.email}! Your user was registered ! have fun!!`,
+  });
+});
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
