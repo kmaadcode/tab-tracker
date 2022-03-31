@@ -4,7 +4,7 @@
     <h1>Register</h1>
     <input
       type="email"
-      v-model="email"      
+      v-model="email"
       name="email"
       autocomplete="off"
       placeholder="Email"
@@ -22,14 +22,14 @@
   </div>
 </template>
 <script>
-  import AuthenticationService from '@/services/AuthenticationService'
+import AuthenticationService from '@/services/AuthenticationService'
 export default {
   data () {
     return {
       email: '',
       password: ''
-    }  
-  },  
+    }
+  },
   methods: {
     async register () {
       await AuthenticationService.register({
