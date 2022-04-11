@@ -38,6 +38,7 @@
     "eslint-plugin-vue": "^8.5.0"
   },
 "resolutions": {
-  "minimist":"^1.2.6"
+  "minimist":"^1.2.6",
+  "growl":"^1.10.0"
 }
 }
